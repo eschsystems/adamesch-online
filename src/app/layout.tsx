@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "adamesch.online",
   description: "a d&d-inspired character sheet for Adam Esch",
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
   },
 };
 
