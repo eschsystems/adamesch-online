@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b0510;
+  --foreground: #00ffff;
+  --neon-cyan: #00ffff;
+  --neon-pink: #ff00ff;
+  --neon-green: #00ff41;
+  --neon-purple: #53277e;
+  --neon-orange: #ff8c00;
+  --card-bg: rgba(16, 16, 32, 0.8);
+  --card-border: rgba(0, 255, 255, 0.3);
 }
 
 @theme inline {
@@ -12,15 +19,57 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', monospace;
+  min-height: 100vh;
+}
+
+.neon-glow {
+  text-shadow: 
+    0 0 3px currentColor,
+    0 0 6px currentColor;
+}
+
+.card-glow {
+  box-shadow: 
+    0 0 5px rgba(0, 255, 255, 0.2),
+    inset 0 0 5px rgba(0, 255, 255, 0.05);
+}
+
+/* Custom scrollbar styles */
+.scrollbar-neon {
+  scrollbar-width: thin;
+  scrollbar-color: #ff00ff #0b0510;
+}
+
+.scrollbar-neon::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-neon::-webkit-scrollbar-track {
+  background: rgba(11, 5, 16, 0.8);
+  border-radius: 3px;
+}
+
+.scrollbar-neon::-webkit-scrollbar-thumb {
+  background: #ff00ff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
+}
+
+.scrollbar-neon::-webkit-scrollbar-thumb:hover {
+  background: #ff33ff;
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.5);
+}
+
+/* Blink animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.blink-animation {
+  animation: blink 3s infinite;
 }
