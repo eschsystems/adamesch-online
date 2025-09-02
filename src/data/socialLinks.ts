@@ -73,6 +73,12 @@ export const socialLinks: SocialLink[] = [
     redirectPath: "substack"
   },
   {
+    platform: "throne", 
+    handle: "@adamesch",
+    url: "https://throne.com/adamesch",
+    redirectPath: "throne"
+  },
+  {
     platform: "followme",
     handle: "all links",
     url: "https://adamesch.online/#followme",
