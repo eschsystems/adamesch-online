@@ -21,14 +21,14 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "twitter",
-    handle: "@mcescher0",
-    url: "https://twitter.com/mcescher0",
+    handle: "@highqueenadam",
+    url: "https://twitter.com/highqueenadam",
     redirectPath: "twitter"
   },
   {
     platform: "x",
-    handle: "@mcescher0",
-    url: "https://x.com/mcescher0",
+    handle: "@highqueenadam",
+    url: "https://x.com/highqueenadam",
     redirectPath: "x",
     isHidden: true
   },
