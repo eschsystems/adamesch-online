@@ -2,6 +2,7 @@ interface SocialLink {
   platform: string;
   handle: string;
   url: string;
+  isHidden?: boolean;
 }
 
 interface AliasCardProps {
@@ -14,7 +15,7 @@ export default function AliasCard({ socialLinks }: AliasCardProps) {
       <h3 className="text-lg font-bold text-[var(--neon-purple)] neon-glow mb-4 text-center">ALIASES</h3>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 text-sm font-mono">
-        {socialLinks.filter(link => link.platform !== "followme").map((link, index) => (
+        {socialLinks.filter(link => !link.isHidden).map((link, index) => (
           <div key={index} className="text-center">
             <div className="text-[var(--neon-cyan)] opacity-70 text-xs uppercase tracking-wide mb-1">
               {link.platform}
@@ -31,7 +32,7 @@ export default function AliasCard({ socialLinks }: AliasCardProps) {
         ))}
         
         {/* Placeholder for additional links */}
-        {Array.from({ length: Math.max(0, 6 - socialLinks.filter(link => link.platform !== "followme").length) }).map((_, index) => (
+        {Array.from({ length: Math.max(0, 6 - socialLinks.filter(link => !link.isHidden).length) }).map((_, index) => (
           <div key={`placeholder-${index}`} className="text-center opacity-30">
             <div className="text-[var(--neon-cyan)] text-xs uppercase tracking-wide mb-1">
               platform

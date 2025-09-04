@@ -3,6 +3,7 @@ export interface SocialLink {
   handle: string;
   url: string;
   redirectPath: string; // The path that will trigger the redirect (without leading slash)
+  isHidden?: boolean; // Optional: if true, link will not be displayed in the UI but still work as redirect
 }
 
 export const socialLinks: SocialLink[] = [
@@ -23,6 +24,13 @@ export const socialLinks: SocialLink[] = [
     handle: "@mcescher0",
     url: "https://twitter.com/mcescher0",
     redirectPath: "twitter"
+  },
+  {
+    platform: "x",
+    handle: "@mcescher0",
+    url: "https://x.com/mcescher0",
+    redirectPath: "x",
+    isHidden: true
   },
   {
     platform: "threads", 
@@ -82,7 +90,8 @@ export const socialLinks: SocialLink[] = [
     platform: "followme",
     handle: "all links",
     url: "https://adamesch.online/#followme",
-    redirectPath: "followme"
+    redirectPath: "followme",
+    isHidden: true
   }
 ];
 
