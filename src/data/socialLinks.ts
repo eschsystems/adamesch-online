@@ -59,8 +59,22 @@ export const socialLinks: SocialLink[] = [
   {
     platform: "youtube", 
     handle: "@adamesch",
-    url: "https://www.youtube.com/adamesch",
+    url: "https://www.youtube.com/@adamesch",
     redirectPath: "youtube"
+  },
+  {
+    platform: "youtube", 
+    handle: "@weekendwednesday",
+    url: "https://www.youtube.com/@weekendwednesday",
+    redirectPath: "weekendwednesday",
+    isHidden: true
+  },
+  {
+    platform: "youtube", 
+    handle: "@adhddaemon",
+    url: "https://www.youtube.com/@adhddaemon",
+    redirectPath: "adhddaemon",
+    isHidden: true
   },
   {
     platform: "ko-fi", 
@@ -91,6 +105,13 @@ export const socialLinks: SocialLink[] = [
     handle: "@adamesch_",
     url: "https://www.instagram.com/adamesch_",
     redirectPath: "instagram"
+  },
+  {
+    platform: "onlyfans",
+    handle: "@merlinlongcock",
+    url: "https://onlyfans.com/merlinlongcock",
+    redirectPath: "onlyfans",
+    isHidden: true
   },
   {
     platform: "followme",
