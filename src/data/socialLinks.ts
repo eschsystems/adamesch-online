@@ -39,16 +39,16 @@ export const socialLinks: SocialLink[] = [
     redirectPath: "threads"
   },
   {
-    platform: "instagram", 
-    handle: "@adamesch_",
-    url: "https://www.instagram.com/adamesch_",
-    redirectPath: "instagram"
-  },
-  {
     platform: "bluesky", 
     handle: "@adamesch.online",
     url: "https://bsky.app/profile/adamesch.online",
     redirectPath: "bluesky"
+  },
+  {
+    platform: "tiktok", 
+    handle: "@adamesch",
+    url: "https://www.tiktok.com/@adamesch",
+    redirectPath: "tiktok"
   },
   {
     platform: "twitch",
@@ -85,6 +85,12 @@ export const socialLinks: SocialLink[] = [
     handle: "@adamesch",
     url: "https://throne.com/adamesch",
     redirectPath: "throne"
+  },
+  {
+    platform: "instagram", 
+    handle: "@adamesch_",
+    url: "https://www.instagram.com/adamesch_",
+    redirectPath: "instagram"
   },
   {
     platform: "followme",

@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Claude Code session notes (local development only)
 CLAUDE.md
+
+# Business planning documents (local development only)
+wordOfLinking.md
