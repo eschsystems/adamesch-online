@@ -107,6 +107,12 @@ export const socialLinks: SocialLink[] = [
     redirectPath: "instagram"
   },
   {
+    platform: "pinterest",
+    handle: "@technicalboy89",
+    url: "https://www.pinterest.com/technicalboy89",
+    redirectPath: "pinterest"
+  },
+  {
     platform: "onlyfans",
     handle: "@merlinlongcock",
     url: "https://onlyfans.com/merlinlongcock",
