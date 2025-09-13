@@ -170,8 +170,8 @@ export default function Home() {
               backstory="a computer engineer from indiana who has professionally managed entire datacenters and architected cloud infrastructure for fortune 500 companies. despite these accomplishments, he considers his corporate tech career to have failed due to a series of unfortunate managers who failed to recognize his brilliance. he now reserves his out-of-the-box, unconventional approaches for his own company's clients and pays the bills working nights at a gas station/convenience store, where all that walking around has resulted in him having a *fantastic* ass"
               personalityTraits=""
               ideals="believes ai represents a paradigm shift as transformative as the internet was in the 1990s"
-              bonds="loves cats 🐱"
-              flaws="hates boomers, wants to be a billionaire, has too many ideas, cannot perceive time"
+              bonds="loves cats 🐱, demonstrates cross-domain mastery, is a pirate"
+              flaws="wants to be a billionaire, has too many ideas, cannot perceive time"
             />
           </div>
           
