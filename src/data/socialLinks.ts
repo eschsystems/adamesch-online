@@ -45,12 +45,6 @@ export const socialLinks: SocialLink[] = [
     redirectPath: "bluesky"
   },
   {
-    platform: "tiktok", 
-    handle: "@adamesch",
-    url: "https://www.tiktok.com/@adamesch",
-    redirectPath: "tiktok"
-  },
-  {
     platform: "twitch",
     handle: "@garaknotaspy", 
     url: "https://www.twitch.tv/garaknotaspy",
@@ -81,12 +75,6 @@ export const socialLinks: SocialLink[] = [
     handle: "@adamesch",
     url: "https://ko-fi.com/adamesch",
     redirectPath: "buymeacoffee"
-  },
-  {
-    platform: "patreon", 
-    handle: "@adamesch",
-    url: "https://patreon.com/adamesch",
-    redirectPath: "patreon"
   },
   {
     platform: "substack", 
