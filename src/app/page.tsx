@@ -9,6 +9,8 @@ import BackstoryCard from "@/components/BackstoryCard";
 import AliasCard from "@/components/AliasCard";
 import SpellsCard from "@/components/SpellsCard";
 import JournalCard from "@/components/JournalCard";
+import SubclassTabsCard from "@/components/SubclassTabsCard";
+import { SubclassProvider } from "@/components/SubclassContext";
 import Footer from "@/components/Footer";
 import { socialLinks } from "@/data/socialLinks";
 import { getRecentPosts } from "@/lib/blog";
@@ -125,6 +127,7 @@ export default function Home() {
   return (
     <div className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
+        <SubclassProvider>
         <div className="grid gap-6 lg:grid-cols-3">
           {/* Top Row */}
           <div className="lg:col-span-2">
@@ -138,7 +141,12 @@ export default function Home() {
             alignment="chaotic evil"
             experiencePoints={9001}
           />
-          
+
+          {/* Subclass tabs - full width beneath name & details */}
+          <div className="lg:col-span-3">
+            <SubclassTabsCard />
+          </div>
+
           {/* Second Row - Character Appearance, Allies & Organizations, Backstory */}
           <div className="h-full">
             <CharacterAppearanceCard 
@@ -242,7 +250,8 @@ export default function Home() {
           <SkillsCard skills={skills} />
           <SavingThrowsCard savingThrows={savingThrows} />
         </div>
-        
+        </SubclassProvider>
+
         {/* Full-width alias card at bottom */}
         <div className="mt-6">
           <AliasCard socialLinks={socialLinks} />
