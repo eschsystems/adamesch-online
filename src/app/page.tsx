@@ -113,10 +113,10 @@ export default function Home() {
       description: "contemporary art gallery showcasing homoerotic artists with a focus on analog, non-digital art"
     },
     {
-      name: '"snacks & stimulants"',
+      name: "thnk",
       type: "organization" as const,
-      relationship: "assistant manager",
-      description: "nocturnal purveyor of essential supplies for late-night adventurers and caffeine-dependent denizens"
+      relationship: "cto",
+      description: "mood-tagged micro-posting app, a place where thoughts live"
     }
   ];
 
@@ -175,7 +175,7 @@ export default function Home() {
           
           <div className="lg:col-span-1 h-full">
             <BackstoryCard 
-              backstory="a computer engineer from indiana who has professionally managed entire datacenters and architected cloud infrastructure for fortune 500 companies. despite these accomplishments, he considers his corporate tech career to have failed due to a series of unfortunate managers who failed to recognize his brilliance. he now reserves his out-of-the-box, unconventional approaches for his own company's clients and pays the bills working nights at a gas station/convenience store, where all that walking around has resulted in him having a *fantastic* ass"
+              backstory="a computer engineer from indiana who has professionally managed entire datacenters and architected cloud infrastructure for fortune 500 companies. after a decade of keeping other people's systems alive, he struck out on his own and now pours his out-of-the-box, unconventional approaches into his own company, a friend's startup and his husband's gallery. years of walking datacenter floors have resulted in him having a *fantastic* ass"
               personalityTraits=""
               ideals="believes ai represents a paradigm shift as transformative as the internet was in the 1990s"
               bonds="loves cats 🐱, demonstrates cross-domain mastery, is a pirate"
