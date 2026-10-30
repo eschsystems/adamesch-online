@@ -15,8 +15,8 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "linkedin", 
-    handle: "@adameschpro",
-    url: "https://linkedin.com/in/adameschpro",
+    handle: "@adamesch",
+    url: "https://linkedin.com/in/adamesch",
     redirectPath: "linkedin"
   },
   {
